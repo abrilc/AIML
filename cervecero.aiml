@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+
+<category>
+    <pattern>*</pattern>
+        <template>No se que decirte, tal vez pueda aconsejarte una cerveza...</template>
+</category>
+
+<category>
+    <pattern>ME LLAMO *</pattern>
+    <template>Hola <set name = "persona"> <star/>, Te gusta la cerveza? Puedo aconsejarte una</set></template>
+</category>
+
+<category>
+    <pattern>HOLA</pattern>
+        <template>Hola soy el bot cervecero. Como te llamas?</template>
+</category>
+<category><pattern>BUENOS DIAS</pattern><template><srai>HOLA</srai></template></category>
+<category><pattern>BUENAS TARDES</pattern><template><srai>HOLA</srai></template></category>
+<category><pattern>UEP</pattern><template><srai>HOLA</srai></template></category>
+<category><pattern>UEP COM ANAM</pattern><template><srai>HOLA</srai></template></category>
+<category><pattern>BONES</pattern><template><srai>HOLA</srai></template></category>
+
+<category>
+    <pattern>QUE ES LA CERVEZA</pattern>
+        <template>La cerveza es una bebida alcoholica no destilada, aquí tienes más información por si quieres saber más. Aunque lo mejor es que la pruebes:
+        <button>
+            <text>Info sobre cerveza!</text>
+            <url>https://es.wikipedia.org/wiki/Cerveza</url>
+        </button>
+        </template>
+</category>
+<category><pattern>HABLAME DE LA CERVEZA</pattern><template><srai>QUE ES LA CERVEZA</srai></template></category>
+<category><pattern>HABLAME DE ELLA</pattern><template><srai>QUE ES LA CERVEZA</srai></template></category>
+<category><pattern>HABLEMOS DE CERVEZA</pattern><template><srai>QUE ES LA CERVEZA</srai></template></category>
+<category><pattern>VALE</pattern><template><srai>QUE ES LA CERVEZA</srai></template></category>
+<category><pattern>OK</pattern><template><srai>QUE ES LA CERVEZA</srai></template></category>
+<category><pattern>HABLAME DE CERVEZA</pattern><template><srai>QUE ES LA CERVEZA</srai></template></category>
+<category><pattern>QUE ES CERVEZA</pattern><template><srai>QUE ES LA CERVEZA</srai></template></category>
+
+<category>
+     <pattern>RECOMIENDAME UNA CERVEZA</pattern>
+        <template>La prefieres rubia, negra o tostada?</template>
+</category>
+<category><pattern>RECOMIENDAME UNA</pattern><template><srai>RECOMIENDAME UNA CERVEZA</srai></template></category>
+<category><pattern>RECOMIENDAME OTRA</pattern><template><srai>RECOMIENDAME UNA CERVEZA</srai></template></category>
+<category><pattern>ACONSEJAME UNA</pattern><template><srai>RECOMIENDAME UNA CERVEZA</srai></template></category>
+<category><pattern>ACONSEJAME OTRA</pattern><template><srai>RECOMIENDAME UNA CERVEZA</srai></template></category>
+<category><pattern>ACONSEJAME ALGUNA</pattern><template><srai>RECOMIENDAME UNA CERVEZA</srai></template></category>
+
+<category>
+    <pattern>RUBIA</pattern>
+    <template><random>
+        <li>Alhambra, la mas buena de todas!</li>
+        <li>Cruzcampo, eso si, bien fresquita!</li>
+        <li>Steinburgh, la preferida del mendigo de mi barrio</li>
+        <li>San Miguel, la de toda la vida</li>
+        <li>Skol, significa a tu salud en Sueco</li>
+        <li>La garrapata roja, la preferida de Homer!</li>
+    </random></template>
+</category>
+
+<category>
+    <pattern>NEGRA</pattern>
+    <template><random>
+        <li>Guiness, la preferida por los irlandeses</li>
+        <li>Bock Damm, un par de estas y te pesan las piernas!</li>
+    </random></template>
+</category>
+
+<category>
+    <pattern>TOSTADA</pattern>
+    <template><random>
+        <li>Mahou Maestra, mmmmhhhh...</li>
+        <li>San Miguel Selecta, muho mejor que la original</li>
+        <li>Amstel Oro, buenísima!</li>
+        <li>La Trappe</li>
+        <li>Alhambra Reserva, me tomaria una ahora...</li>
+    </random></template>
+</category>
+
+<category>
+    <pattern>NO ME GUSTA</pattern>
+        <template>No pasa nada, hay muchas más!</template>
+</category>
+<category><pattern>ESA NO ME GUSTA</pattern><template><srai>NO ME GUSTA</srai></template></category>
+<category><pattern>QUE ASCO</pattern><template><srai>NO ME GUSTA</srai></template></category>
+
+<category>
+    <pattern>* CHISTE</pattern>
+        <template><random>
+            <li>- Pongame una cerveza<br/>- ¿La quiere sin alcohol?<br/>- No, la quiero sin lactosa<br/>- Pero... eso es absurdo<br/>- Ha empezado usted!<br/></li>
+            <li>Van dos botellines y se cae el del centro XD</li>
+        </random></template>
+</category>
+<category><pattern>CUENTAME UN CHISTE</pattern><template><srai>* CHISTE</srai></template></category>
+
+<category>
+    <pattern>JAJAJA</pattern>
+        <template>Vaya, veo que te gusta hablar de cerveza!</template>
+</category>
+<category><pattern>JAJA</pattern><template><srai>JAJAJA</srai></template></category>
+<category><pattern>JEJE</pattern><template><srai>JAJAJA</srai></template></category>
+<category><pattern>JIJI</pattern><template><srai>JAJAJA</srai></template></category>
+<category><pattern>JEJEJE</pattern><template><srai>JAJAJA</srai></template></category>
+<category><pattern>JIJIJI</pattern><template><srai>JAJAJA</srai></template></category>
+
+<category>
+    <pattern>NO ME GUSTA LA CERVEZA</pattern>
+    <template><random>
+        <li>Tal vez deberías pasarte al whisky!</li>
+        <li>Entonces para que hablas conmigo?</li>
+        <li>Hay gente para todo</li>
+        <li>Más para mi</li>
+        <li>Lo siento mucho, tomate una coca-cola</li>
+        <li>Haré como que no he leido eso...</li>
+    </random></template>
+</category>
+<category><pattern>PREFIERO OTRA BEBIDA</pattern><template><srai>NO ME GUSTA LA CERVEZA</srai></template></category>
+<category><pattern>LA CERVEZA ES MALA</pattern><template><srai>NO ME GUSTA LA CERVEZA</srai></template></category>
+
+<category>
+    <pattern>CUENTAME ALGO</pattern>
+    <template><random>
+        <li>Los antiguos babilonios fueron los primeros en elaborar cerveza. De hecho se lo tomaban tan en serio que si realizabas una mala producción, el castigo era arrojarte a ella.</li>
+        <li>La cerveza está compuesta fundamentalmente de agua, lo cual no resulta particularmente interesante.</li>
+        <li>El agua mineral de Dublín se usaba para hacer cerveza negra como la Guiness.</li>
+        <li>En 1814 un tanque que contenía 3.500 barriles de cerveza se rompió originando una ola que fue a parar a una parroquia de Londres. Hubo que demoler dos casas y murieron 9 personas.</li>
+        <li>Los vikingos creían que una cabra gigante que proporcionaba un chorro infinito de cerveza les estaba esperando en el Valhalla (el paraíso vikingo).</li>
+        <li>La cenosilicafobia es el miedo a un vaso vacío.</li>
+    </random></template>
+</category>
+<category><pattern>SABES ALGUNA ANECDOTA</pattern><template><srai>CUENTAME ALGO</srai></template></category>
+<category><pattern>ME ABURRO</pattern><template><srai>CUENTAME ALGO</srai></template></category>
+<category><pattern>SABES ALGUNA CURIOSIDAD</pattern><template><srai>CUENTAME ALGO</srai></template></category>
+
+<category>
+    <pattern>ADIOS</pattern>
+        <template>Hasta otra!</template>
+</category>
+<category><pattern>HASTA LUEGO</pattern><template><srai>ADIOS</srai></template></category>
+<category><pattern>NOS VEMOS</pattern><template><srai>ADIOS</srai></template></category>
+<category><pattern>BYE</pattern><template><srai>ADIOS</srai></template></category>
+<category><pattern>DEW</pattern><template><srai>ADIOS</srai></template></category>
+<category><pattern>A10</pattern><template><srai>ADIOS</srai></template></category>
+
+<category>
+    <pattern>COMO ES UNA CERVEZA</pattern>
+        <template>Es más o menos así <image>https://steemitimages.com/640x0/http://www.aceitedearganweb.com/wp-content/uploads/2015/10/cerveza.jpg</image></template>
+</category>
+<category>
+    <pattern>COMO ES UNA CERVEZA NEGRA</pattern>
+        <template>Es más o menos así <image>https://steemitimages.com/DQme76DrVfZY5FEjcKjtob3qMjfoyREcKywTLTv1o9ousR7/negra.jpg</image></template>
+</category>
+
+</aiml>
