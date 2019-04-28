@@ -1,10 +1,10 @@
 # LLGSGI-04
-chat-bot aiml
+## chat-bot aiml
 
 Files on this repository: 
 
-  tutorial.aiml - tutorial chatbot de pandorabots
+<br>tutorial.aiml - tutorial chatbot de pandorabots
 
-  cervecero.aiml - chatbot task
+<br>cervecero.aiml - chatbot task
 
-  cervecero.aiml - video testing cervecerobot
+<br>cervecero.aiml - video testing cervecerobot
